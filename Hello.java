@@ -1,51 +1,51 @@
 package chapter1;
 
-/*íŒŒì¼ì´ë¦„ : ì•ˆë…• ì¶œë ¥
-ì‘ì„±ì : ì´í•™ëª…
-ì‘ì„±ì¼ : 2021.03.17
-ëª©ì  : Hello ì¶œë ¥*/
+/*ÆÄÀÏÀÌ¸§ : ¾È³ç Ãâ·Â
+ÀÛ¼ºÀÚ : ÀÌÇĞ¸í
+ÀÛ¼ºÀÏ : 2021.03.17
+¸ñÀû : Hello Ãâ·Â*/
 
-/*	ì£¼ì„ì²˜ë¦¬  í•œì¤„: //                  ì»¨íŠ¸ë¡¤ /
-	ë‹¨ë½:  ~~~ 	   ì»¨íŠ¸ë¡¤ ì‰¬í”„íŠ¸ /
-	ë³€ìˆ˜ : ê°’ì„ ì €ì¥ - ë©”ëª¨ë¦¬ê³µê°„ì—
-	ë³€ìˆ˜ì„ ì–¸ : ë©”ëª¨ë¦¬ ê³µê°„ì˜ í• ë‹¹
+/*	ÁÖ¼®Ã³¸®  ÇÑÁÙ: //                  ÄÁÆ®·Ñ /
+	´Ü¶ô:  ~~~ 	   ÄÁÆ®·Ñ ½¬ÇÁÆ® /
+	º¯¼ö : °ªÀ» ÀúÀå - ¸Ş¸ğ¸®°ø°£¿¡
+	º¯¼ö¼±¾ğ : ¸Ş¸ğ¸® °ø°£ÀÇ ÇÒ´ç
 */
 
-//ì»¨íŠ¸ë¡¤ ì‰¬í”„íŠ¸ f ===== ì •ë¦¬
-//print ì¤„ë‚´ë¦¼x println ì¤„ë‚´ë¦¼O
-// ì‚¬ìš©ê°€ëŠ¥ íŠ¹ìˆ˜ê¸°í˜¸ _ $
-// falseë“±ì˜ ê°’ì€ ë³€ìˆ˜ëª…ìœ¼ë¡œ ì‚¬ìš© í•  ìˆ˜ì—†ë‹¤
+//ÄÁÆ®·Ñ ½¬ÇÁÆ® f ===== Á¤¸®
+//print ÁÙ³»¸²x println ÁÙ³»¸²O
+// »ç¿ë°¡´É Æ¯¼ö±âÈ£ _ $
+// falseµîÀÇ °ªÀº º¯¼ö¸íÀ¸·Î »ç¿ë ÇÒ ¼ö¾ø´Ù
 
 public class Hello {
 
 	public static void main(String[] args) {
 		ex1();
-		// ë…¼ë¦¬ ì—°ì‚°ì && || !
+		// ³í¸® ¿¬»êÀÚ && || !
 		int num1, num2;
 		num1 =11;
 		num2 =22;
 		boolean result;
-		//ë³€ìˆ˜ num1ì— ì €ì¥ëœ ê°’ì´ 1ê³¼ 100ì‚¬ì´ì˜ ìˆ˜ì¸ê°€?
+		//º¯¼ö num1¿¡ ÀúÀåµÈ °ªÀÌ 1°ú 100»çÀÌÀÇ ¼öÀÎ°¡?
 		result = (1<num1) && (num1<100);
-		System.out.println("1ì´ˆê³¼ 100 ë¯¸ë§Œ ìˆ˜ì¸ê°€?" + result);
-		//ë³€ìˆ˜ num2ì— ì €ì¥ëœ ê°’ì´ 2ë˜ëŠ” 3ì˜ ë°°ìˆ˜ì¸ê°€?
+		System.out.println("1ÃÊ°ú 100 ¹Ì¸¸ ¼öÀÎ°¡?" + result);
+		//º¯¼ö num2¿¡ ÀúÀåµÈ °ªÀÌ 2¶Ç´Â 3ÀÇ ¹è¼öÀÎ°¡?
 		result = (num2%2==0) || (num2%3==0); // (num2%2) == 0 || (num2%3) == 0;
-		System.out.println("2ë˜ëŠ” 3ì˜ ë°°ìˆ˜ì¸ê°€?"+ result); // true
-		// notì—°ì‚°ì
+		System.out.println("2¶Ç´Â 3ÀÇ ¹è¼öÀÎ°¡?"+ result); // true
+		// not¿¬»êÀÚ
 		System.out.println(!result); //false
 
 	}
 
-	public static void ex1() { // ex1 ë©”ì„œë“œìƒì„±
-		// ë³€ìˆ˜ìƒì„±
+	public static void ex1() { // ex1 ¸Ş¼­µå»ı¼º
+		// º¯¼ö»ı¼º
 		int num = 9;
 		System.out.println(num);
 
 		num = 12;
 		System.out.println(num);
 //byte -128 ~ 127	(1byte)
-		byte num1; // ë³€ìˆ˜ì„ ì–¸
-		num1 = 127; // ê°’ ëŒ€ì… ì´ˆê¸°ê°’
+		byte num1; // º¯¼ö¼±¾ğ
+		num1 = 127; // °ª ´ëÀÔ ÃÊ±â°ª
 		System.out.println(num1);
 //short 32000		(2byte)
 		short num2;
@@ -57,49 +57,49 @@ public class Hello {
 //int 2.100.000.000 (4byte)
 		int num4 = 2100000000;
 		System.out.println(num4);
-//long ~~~			(8byte)        longì€ ëŒ€ì… Lí‘œì‹œ
+//long ~~~			(8byte)        longÀº ´ëÀÔ LÇ¥½Ã
 		long num5 = 2100000000L;
 		System.out.println(num5);
-//double ê¸°ë³¸ íƒ€ì… 
+//double ±âº» Å¸ÀÔ 
 		double d1 = 0.23;
 //float 
 		float f1 = 0.23232323F;
 		System.out.println(d1);
 		System.out.println(f1);
-//char ê¸€ - ìœ ë‹ˆì½”ë“œë¡œ ì €ì¥ :: ìŒìˆ˜ê°€ ì—†ë‹¤ 
+//char ±Û - À¯´ÏÄÚµå·Î ÀúÀå :: À½¼ö°¡ ¾ø´Ù 
 		char ch1 = 'A';
-		ch1 = 'Z'; // í˜•ë³€í™˜ ê¸€ > ìˆ«ì Zì˜ ìœ ë‹ˆì½”ë“œëŠ” 90
+		ch1 = 'Z'; // Çüº¯È¯ ±Û > ¼ıÀÚ ZÀÇ À¯´ÏÄÚµå´Â 90
 		System.out.println((int) ch1);
 
-		int iNum = 90; // í˜•ë³€í™˜ ìˆ«ì > ê¸€ ìœ ë‹ˆì½”ë“œ 90ì˜ ê¸€ìëŠ” Z
+		int iNum = 90; // Çüº¯È¯ ¼ıÀÚ > ±Û À¯´ÏÄÚµå 90ÀÇ ±ÛÀÚ´Â Z
 		System.out.println((char) iNum);
 
-		char ch2 = 'í—';
+		char ch2 = 'Çæ';
 		System.out.println((int) ch2);
 
-		char ch3 = '\uAFB9'; // ìœ ë‹ˆì½”ë“œì— ë”°ë¥¸ ê·¸ ê°’ ì¶œë ¥
+		char ch3 = '\uAFB9'; // À¯´ÏÄÚµå¿¡ µû¸¥ ±× °ª Ãâ·Â
 		System.out.println(ch3);
 
-		boolean yesNo = true; // ì°¸ ê±°ì§“ íŠ¸ë£¨
+		boolean yesNo = true; // Âü °ÅÁş Æ®·ç
 		System.out.println(yesNo);
 		if (yesNo)
-			System.out.println("yesNoì˜ê°’ true ì…ë‹ˆë‹¤");
+			System.out.println("yesNoÀÇ°ª true ÀÔ´Ï´Ù");
 		else
-			System.out.println("yesNoì˜ê°’ false ì…ë‹ˆë‹¤");
+			System.out.println("yesNoÀÇ°ª false ÀÔ´Ï´Ù");
 
-		int a, b, c; // ê±°ì§“ì´ê¸°ì— flase
+		int a, b, c; // °ÅÁşÀÌ±â¿¡ flase
 		a = 10;
 		b = 20;
 		c = 30;
 		System.out.println(a > b);
 
-		// ë¬¸ìëŠ” ê°ì²´ìë£Œí˜•ìœ¼ë¡œ (ëŒ€ë¬¸ì) Stringì´ë¼ëŠ” í´ë˜ìŠ¤ê°€ ì¡´ì¬
-		String str = "ê°€ë‚˜ë‹¤ë¼";
-		String str1 = "ë§ˆë°”ì‚¬";
-		String str2 = "ì•„ìì°¨ì¹´";
+		// ¹®ÀÚ´Â °´Ã¼ÀÚ·áÇüÀ¸·Î (´ë¹®ÀÚ) StringÀÌ¶ó´Â Å¬·¡½º°¡ Á¸Àç
+		String str = "°¡³ª´Ù¶ó";
+		String str1 = "¸¶¹Ù»ç";
+		String str2 = "¾ÆÀÚÂ÷Ä«";
 		System.out.println(str + str1 + str2);
 
-		final double PI = 3.14d; // ë³€ìˆ˜ê°€ ì•„ë‹Œ ê³ ì •ëœ ê°’ì´ê¸°ì— finalì„ ë¶™ì—¬ì„œ ì €ì¥ -- ì´ˆê¸°í™”ëœ ìƒìˆ˜ ë³€ê²½ë¶ˆê°€
+		final double PI = 3.14d; // º¯¼ö°¡ ¾Æ´Ñ °íÁ¤µÈ °ªÀÌ±â¿¡ finalÀ» ºÙ¿©¼­ ÀúÀå -- ÃÊ±âÈ­µÈ »ó¼ö º¯°æºÒ°¡
 
 	}
 
@@ -112,16 +112,16 @@ public class Hello {
 		System.out.println(a * b); // 35
 		System.out.println(b / a); // 1
 		System.out.println(b % a); // 2
-		// ê´€ê³„ ì—°ì‚°ì í¬ê¸°
+		// °ü°è ¿¬»êÀÚ Å©±â
 		System.out.println(a > b); // false
 		System.out.println(a < b); // true
 		System.out.println(a >= b); // flase
 		System.out.println(a <= b); // true
-		System.out.println(a == b); // flase ê°™ì€ê°€
-		System.out.println(a != b); // true ë‹¤ë¥¸ê°€
-		// ë³µí•©ëŒ€ì… ì—°ì‚°ì
+		System.out.println(a == b); // flase °°Àº°¡
+		System.out.println(a != b); // true ´Ù¸¥°¡
+		// º¹ÇÕ´ëÀÔ ¿¬»êÀÚ
 		System.out.println(a += 1); // 6
-		System.out.println(a += 2); // 8 ìœ„ì—ì„œ ì•„ë˜ë¡œ a + 1 + 2 = 8
+		System.out.println(a += 2); // 8 À§¿¡¼­ ¾Æ·¡·Î a + 1 + 2 = 8
 
 	}
 
