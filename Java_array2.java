@@ -3,7 +3,7 @@ package chapter1;
 public class Java_array2 {
 
 	public static void main(String[] args) {
-		ex3();
+		ex2();
 
 	
 	}
