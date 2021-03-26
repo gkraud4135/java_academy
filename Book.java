@@ -3,20 +3,20 @@ package chapter2;
 public class Book {
 
 	public static void main(String[] args) {
-		//1. ÀÎ½ºÅÏ½º º¯¼ö(Å¬·¡½ºº¯¼ö, ¸â¹öº¯¼ö)
-		Maker book1 = new Maker();    //2.»ı¼ºÀÚ
+		//1. ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜(í´ë˜ìŠ¤ë³€ìˆ˜, ë©¤ë²„ë³€ìˆ˜)
+		Maker book1 = new Maker();    //2.ìƒì„±ì
 		book1.bookName= "hello";
 		book1.bookID= 1;
-		book1.bookWriter= "¹Ì»ó";
+		book1.bookWriter= "ë¯¸ìƒ";
 		book1.bookPrice=20000;
-		book1.bookPublisher="ÇÏ´Ã";
-		book1.managerID="ÀÌ";
+		book1.bookPublisher="í•˜ëŠ˜";
+		book1.managerID="ì´";
 
 		
 		Maker book2 = new Maker();
 		book2.bookName= "bye";
 		book2.bookID= 2;
-		book2.bookWriter= "¹Ì»ó";
+		book2.bookWriter= "ë¯¸ìƒ";
 		book2.bookPrice=15000;
 		
 		Maker book3 = new Maker();
@@ -25,7 +25,7 @@ public class Book {
 		book3.bookWriter= "good";
 		book3.bookPrice=10000;
 		
-		Maker book4 = new Maker("½Åµ¥·¼¶ó","¹Ì»ó",30000);
+		Maker book4 = new Maker("ì‹ ë°ë ë¼","ë¯¸ìƒ",30000);
 	
 	
 		book1.showBookInfo();
@@ -51,10 +51,10 @@ class Maker {
 	static int height = 200;
 	
 	Maker(){
-		System.out.println("µğÆúµå »ı¼ºÀÚ");
+		System.out.println("ë””í´ë“œ ìƒì„±ì");
 	}
-	Maker(String bookName,String bookWriter,int bookPrice){//¿À¹ö¶óÀÌµùµÈ »ı¼ºÀÚ
-		this.bookName=bookName;//¸Ş°³
+	Maker(String bookName,String bookWriter,int bookPrice){//ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ì
+		this.bookName=bookName;//ë©”ê°œ
 		this.bookWriter=bookWriter;
 		this.bookPrice=bookPrice;
 	}
@@ -64,7 +64,7 @@ class Maker {
 //	}
 	
 	
-	//source-generget,set ÇÊ¿äÇÑ ºÎºĞÀ» °¨º°ÇÏ´Â ¸Ş¼­µå Ãß°¡
+	//source-generget,set í•„ìš”í•œ ë¶€ë¶„ì„ ê°ë³„í•˜ëŠ” ë©”ì„œë“œ ì¶”ê°€
 	public int getBookID() {
 		return bookID;
 	}
@@ -83,9 +83,9 @@ class Maker {
 	public void setBookPrice(int bookPrice) {
 		this.bookPrice = bookPrice;
 	}
-	//¸Ş¼Òµå,get¸Ş¼Òµå,set¸Ş¼Òµå,
-	void showBookInfo(){//3.¸Ş¼­µå
-		System.out.println("Ã¥ÀÌ¸§:"+bookName+" ÀúÀÚ:"+bookWriter+" °¡°İ"+bookPrice);
+	//ë©”ì†Œë“œ,getë©”ì†Œë“œ,setë©”ì†Œë“œ,
+	void showBookInfo(){//3.ë©”ì„œë“œ
+		System.out.println("ì±…ì´ë¦„:"+bookName+" ì €ì:"+bookWriter+" ê°€ê²©"+bookPrice);
 	}
 }
 
