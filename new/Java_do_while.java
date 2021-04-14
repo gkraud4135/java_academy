@@ -12,7 +12,7 @@ public class Java_do_while {
 	public static void ex1(){
 		
 		int num = 0;
-		do {System.out.println("¹İº¹½ÃÄö½º"+num);
+		do {System.out.println("Â¹ÃÂºÂ¹Â½ÃƒÃ„Ã¶Â½Âº"+num);
 		num++;
 		}while(num<5);
 		
