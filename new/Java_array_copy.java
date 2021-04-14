@@ -11,7 +11,7 @@ public class Java_array_copy {
 	}
 	
 	
-	public static void ex1(){//¹è¿­ÀÇ º¹»ç ¹æ¹ı1,2,3
+	public static void ex1(){//ë°°ì—´ì˜ ë³µì‚¬ ë°©ë²•1,2,3
 		
 		
 		
@@ -19,7 +19,7 @@ public class Java_array_copy {
 		int[] arr2 = new int[arr1.length];
 		int[] arr3 = new int[arr1.length];
 		
-		//1.¹İº¹¹® »ç¿ë
+		//1.ë°˜ë³µë¬¸ ì‚¬ìš©
 		for(int i=0; i<arr1.length; i++){
 			
 			arr2[i] = arr1[i];	
@@ -28,8 +28,8 @@ public class Java_array_copy {
 			System.out.print(i+" ");
 			System.out.println("");
 		}
-		//2.copy¹® »ç¿ë
-		System.arraycopy(arr1,1,arr3,0,2);    //arr1¿¡ ÀÖ´Â 1¿­ºÎÅÍ arr3 0¿­¿¡ 4°³ º¹»ç
+		//2.copyë¬¸ ì‚¬ìš©
+		System.arraycopy(arr1,1,arr3,0,2);    //arr1ì— ìˆëŠ” 1ì—´ë¶€í„° arr3 0ì—´ì— 4ê°œ ë³µì‚¬
 		for(int i : arr3){
 			System.out.print(i +" ");
 			System.out.println("");
@@ -50,10 +50,10 @@ public class Java_array_copy {
 	public static void ex2(){
 		
 	int[][] apart = {{1,2},{3,4},{5,6},{7,8},{9,10},{1,2},{3,4},{5,6},{7,8},{9,10}};
-	//rowÀÇ °¹¼ö
-	//column °¹¼ö
+	//rowì˜ ê°¯ìˆ˜
+	//column ê°¯ìˆ˜
 	
-	//ÇàÀÇ°³¼ö °¢Çàapart[]
+	//í–‰ì˜ê°œìˆ˜ ê°í–‰apart[]
 	for(int[] row : apart){
 		for(int col : row) {
 			System.out.print(col+"\t");
