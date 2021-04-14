@@ -7,16 +7,16 @@ public class Java_for {
 
 	}
 
-	public static void ex1() {// ¹İº¹¹® for
-		// ¹İº¹Äö½º ÃÊ±â°ª; Á¶°Ç¹®; Áõ°¨,°¨¼Ò°ª
+	public static void ex1() {// ë°˜ë³µë¬¸ for
+		// ë°˜ë³µí€€ìŠ¤ ì´ˆê¸°ê°’; ì¡°ê±´ë¬¸; ì¦ê°,ê°ì†Œê°’
 		for (int i = 0; i < 10; i++) {
-			System.out.println("¹İº¹È½¼ö" + i);
+			System.out.println("ë°˜ë³µíšŸìˆ˜" + i);
 		}
 
 	}
 
 	public static void ex2() {
-		// 1~100ÀÇ ¼öÁß 2ÀÇ ¹è¼öÀÇ ÇÕ°è
+		// 1~100ì˜ ìˆ˜ì¤‘ 2ì˜ ë°°ìˆ˜ì˜ í•©ê³„
 
 		int sum = 0;
 		for (int i = 0; i <= 100; i++) {
@@ -29,7 +29,7 @@ public class Java_for {
 
 	}
 
-	public static void ex3() {// ±¸±¸´Ü 2´Ü
+	public static void ex3() {// êµ¬êµ¬ë‹¨ 2ë‹¨
 		for (int i = 1; i < 10; i++) {
 			System.out.println(2 + "*" + i + "=" + (2 * i));
 		}
@@ -38,7 +38,7 @@ public class Java_for {
 	public static void ex4() {
 
 		for (int i = 2; i < 10; i++) {
-			System.out.println(i + "´Ü");
+			System.out.println(i + "ë‹¨");
 			for (int j = 1; j < 10; j++) {
 				System.out.println(i + "*" + j + "=" + (i * j));
 			}
@@ -49,7 +49,7 @@ public class Java_for {
 	public static void ex5() {
 		for (int i = 2; i < 10; i++) {
 			if (i % 3 == 0) {             //if(i==3||i==7)
-				System.out.println(i + "´Ü");
+				System.out.println(i + "ë‹¨");
 				for (int j = 1; j < 10; j++) {
 					System.out.println(i + "*" + j + "=" + (i * j));
 				}
@@ -57,7 +57,7 @@ public class Java_for {
 		}
 	}
 
-	public static void ex6() { // 2¾¿ Áõ°¡
+	public static void ex6() { // 2ì”© ì¦ê°€
 		int total = 0;
 		for (int i = 2; i <= 100; i += 2) {
 			System.out.println(i);
@@ -74,24 +74,24 @@ public class Java_for {
 		int[] arr = new int[10];
 		
 		for(int i=0; i<10; i++){
-			System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.>>");
+			System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.>>");
 			
-			arr[i] = scan.nextInt(); //Å°º¸µå ÀÔ·ÂÀ» ¹Ş´Â¹®
+			arr[i] = scan.nextInt(); //í‚¤ë³´ë“œ ì…ë ¥ì„ ë°›ëŠ”ë¬¸
 		}
 		//total, average
 		for(int i=0; i<10; i++){
-			System.out.println("ÀúÀåµÈ °ª : "+i+arr[i]);
+			System.out.println("ì €ì¥ëœ ê°’ : "+i+arr[i]);
 			total +=arr[i];
 			}
-		average = total/arr.length; // ¹è¿­ÀÇ ±æÀÌ¸¦ ±¸ÇÏ´Â ÇÔ¼ö
+		average = total/arr.length; // ë°°ì—´ì˜ ê¸¸ì´ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜
 		System.out.println("total = "+ total);
 		System.out.println("average = "+ average);
 	
 	}
-	public static void ex8() {  //break   °Å±âºÎÅÍ ½ÇÇà Á¤Áö
+	public static void ex8() {  //break   ê±°ê¸°ë¶€í„° ì‹¤í–‰ ì •ì§€
 		for (int i = 2; i < 10; i++) {
 			if (i == 3) {
-				System.out.println(i + "´Ü");
+				System.out.println(i + "ë‹¨");
 				for (int j = 1; j < 10; j++) {
 					System.out.println(i + "*" + j + "=" + (i * j));
 				}
@@ -100,10 +100,10 @@ public class Java_for {
 			System.out.println("dan"+i);
 		}
 	}
-	public static void ex9() {  //continue °Å±â´Â ÆĞ½º
+	public static void ex9() {  //continue ê±°ê¸°ëŠ” íŒ¨ìŠ¤
 		for (int i = 2; i < 10; i++) {
 			if (i == 3) {
-				System.out.println(i + "´Ü");
+				System.out.println(i + "ë‹¨");
 				for (int j = 1; j < 10; j++) {
 					System.out.println(i + "*" + j + "=" + (i * j));
 				}
@@ -113,7 +113,7 @@ public class Java_for {
 			System.out.println("dan"+i);
 		}
 	}
-	public static void ex10() { //1~100 ¼öÁß È¦¼öÇÕ°è Â¦¼öÇÕ°è¸¦ Ãâ·Â
+	public static void ex10() { //1~100 ìˆ˜ì¤‘ í™€ìˆ˜í•©ê³„ ì§ìˆ˜í•©ê³„ë¥¼ ì¶œë ¥
 		int total1 =0;
 		int total2 =0;
 		int all = 0;
@@ -124,27 +124,27 @@ public class Java_for {
 			}
 		}
 		total2 = all - total1;
-		System.out.println("Â¦¼öÇÕ"+total1);
-		System.out.println("È¦¼öÇÕ"+total2);
+		System.out.println("ì§ìˆ˜í•©"+total1);
+		System.out.println("í™€ìˆ˜í•©"+total2);
 	}
 
 	
 	public static void ex11() {
-	//º° Ãâ·Â
+	//ë³„ ì¶œë ¥
 	//	*****
 	//	****
 	//	***
 	//	**
 	//	*
 		
-		for(int i=1; i<6; i++){              //º¯¼ö int star Ãß°¡ÇØ¼­ 
-			for(int j=1; j<=i; j++){		//j<star·Î   star-- ÁÙ¿©°¡µµ µÊ
+		for(int i=1; i<6; i++){              //ë³€ìˆ˜ int star ì¶”ê°€í•´ì„œ 
+			for(int j=1; j<=i; j++){		//j<starë¡œ   star-- ì¤„ì—¬ê°€ë„ ë¨
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 	}
-	public static void ex12(){//µÎ°³ÀÇ ÁÖ»çÀ§ÀÇ µÎ´«ÀÇ ÇÕÀÌ 6ÀÌ µÇ´Â ¸ğµç °æ¿ìÀÇ ¼ö¸¦ Ãâ·Â
+	public static void ex12(){//ë‘ê°œì˜ ì£¼ì‚¬ìœ„ì˜ ë‘ëˆˆì˜ í•©ì´ 6ì´ ë˜ëŠ” ëª¨ë“  ê²½ìš°ì˜ ìˆ˜ë¥¼ ì¶œë ¥
 		
 		for(int i=1; i<7; i++){
 			for(int j=1; j<7; j++){
