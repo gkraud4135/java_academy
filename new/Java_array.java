@@ -16,8 +16,8 @@ public class Java_array {
 	
 	public static void ex1() {
 		
-		int[] arr1 = new int[5];		//arr¼±¾ğ
-		arr1[0] = 1; 					//ÃÊ±âÈ­
+		int[] arr1 = new int[5];		//arrì„ ì–¸
+		arr1[0] = 1; 					//ì´ˆê¸°í™”
 		arr1[1] = 2; 
 		arr1[2] = 3; 
 		arr1[3] = 4; 
@@ -28,7 +28,7 @@ public class Java_array {
 			
 		}
 		
-		int arr2[] = {9,8,7,6,5,4,3,2,1};	//arr¼±¾ğ + ÃÊ±âÈ­
+		int arr2[] = {9,8,7,6,5,4,3,2,1};	//arrì„ ì–¸ + ì´ˆê¸°í™”
 		System.out.println(arr2.length);
 
 		char cArr[] = new char[5];
@@ -44,7 +44,7 @@ public class Java_array {
 	
 	public static void ex2() {
 		
-		//65=a								//char ch = 'A'·Î ÃÊ±âÈ­ÈÄ ch++; alph =ch; ÇØµµ µÊ
+		//65=a								//char ch = 'A'ë¡œ ì´ˆê¸°í™”í›„ ch++; alph =ch; í•´ë„ ë¨
 		int alph[] = new int[26];
 		for(int i=0; i<alph.length; i++){
 			alph[i] = i+65;
@@ -54,17 +54,17 @@ public class Java_array {
 		}		
 		}
 	
-	public static void ex3() { // for¹® ´ÜÃà >> ±âº»ÇüÀº ´ãÁö ¸øÇÔ >> String, char, int ³ªÁß¿£ °´Ã¼¸¦ ´ãÀ½
+	public static void ex3() { // forë¬¸ ë‹¨ì¶• >> ê¸°ë³¸í˜•ì€ ë‹´ì§€ ëª»í•¨ >> String, char, int ë‚˜ì¤‘ì—” ê°ì²´ë¥¼ ë‹´ìŒ
 		//int = integer
 		//float = Float
 		
-		String strArr[] = {"°­¾ÆÁö","°í¾çÀÌ","¾Ş¹«»õ"};
-		for(String s:strArr){  			//String s¿¡ strArr°ªÀ» ÃÊ±âÈ­ 
+		String strArr[] = {"ê°•ì•„ì§€","ê³ ì–‘ì´","ì•µë¬´ìƒˆ"};
+		for(String s:strArr){  			//String sì— strArrê°’ì„ ì´ˆê¸°í™” 
 			System.out.print(s + " ");
 		}
 	}
 	
-	public static void ex4(){	//ÃÖ´ë°ª ÃÖ¼Ò°ª Ã£±â
+	public static void ex4(){	//ìµœëŒ€ê°’ ìµœì†Œê°’ ì°¾ê¸°
 		
 		int iArr[] = {4,5,6,7,1,2};
 		int max, min;                 //int max = iArr[0],min = iArr[0]
@@ -82,15 +82,15 @@ public class Java_array {
 		System.out.println(min);
 	}
 	
-	public static void ex5(){	//½ºÄ³³Ê·Î Á¡¼ö °¢°¢ ¹Ş¾Æ¼­ Æò±Õ±¸ÇÏ±â
+	public static void ex5(){	//ìŠ¤ìºë„ˆë¡œ ì ìˆ˜ ê°ê° ë°›ì•„ì„œ í‰ê· êµ¬í•˜ê¸°
 		Scanner scan = new Scanner(System.in);
 		int total = 0;
 		int[] arr = new int[5];
-		System.out.println("Æò±ÕÀ» ±¸ÇÒ ´Ù¼¸°³ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í‰ê· ì„ êµ¬í•  ë‹¤ì„¯ê°œì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 				for(int i=0; i<arr.length; i++)
 				{arr[i]=scan.nextInt();
 				total += arr[i];}
-				System.out.println("Æò±Õ = "+total/arr.length);
+				System.out.println("í‰ê·  = "+total/arr.length);
 				
 		
 		
