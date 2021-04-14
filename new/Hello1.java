@@ -16,7 +16,7 @@ int iNum = bNum;
 
 double dNum = 1.2;
 float fNum = 0.9F;
-//°­Á¦ Çüº¯È¯ == ¸í½ÃÀû Çüº¯È¯
+//ê°•ì œ í˜•ë³€í™˜ == ëª…ì‹œì  í˜•ë³€í™˜
 int iNum1 = (int)dNum + (int)fNum;                //1
 System.out.println(iNum1);
 double iNum2 = dNum + fNum;						//2
@@ -28,10 +28,10 @@ System.out.println(iNum3);
 }
 public static void ex2() {
 	int i = 10;
-	System.out.println(++i);    //11 ¹Ù·Î Áõ°¡
+	System.out.println(++i);    //11 ë°”ë¡œ ì¦ê°€
 	i = 10;
-	System.out.println(i++); 	//10 °ªÀÌ º¯ÇÏÁö ¾ÊÀ½ ´ÙÀ½¹ø »ç¿ë½Ã +1
-	System.out.println(i); 		//11 ±× ÈÄ º¯µ¿µÊ
+	System.out.println(i++); 	//10 ê°’ì´ ë³€í•˜ì§€ ì•ŠìŒ ë‹¤ìŒë²ˆ ì‚¬ìš©ì‹œ +1
+	System.out.println(i); 		//11 ê·¸ í›„ ë³€ë™ë¨
 	System.out.println(i--); 	//11
 	System.out.println(i); 		//10
 
@@ -42,25 +42,25 @@ a= 4;
 b= 7;
 c= 9;
 
-//abcÀÇ °ªÀÌ 2ÀÇ ¹è¼öÀÎ°¡?		
+//abcì˜ ê°’ì´ 2ì˜ ë°°ìˆ˜ì¸ê°€?		
 boolean result = (a%2==0) && (b%2==0) && (c%2==0);
 System.out.println(result);					//false
-//abcÁß °ªÀÌ 2ÀÇ ¹è¼ö°¡ ÀÖ´Â°¡?
+//abcì¤‘ ê°’ì´ 2ì˜ ë°°ìˆ˜ê°€ ìˆëŠ”ê°€?
 boolean result1 = (a%2==0) || (b%2==0) || (c%2==0);
 System.out.println(result1);                 //true
 }
 public static void ex4() {
-	// ºñÆ®¿¬»êÀÚ ¿ŞÂÊÀ¸·Î µÎÄ­ ÀÌµ¿
+	// ë¹„íŠ¸ì—°ì‚°ì ì™¼ìª½ìœ¼ë¡œ ë‘ì¹¸ ì´ë™
 	int num1 = 2;
 	System.out.println(num1 <<=2);         //8     2*2*2
 	
-	int num2 = (5>3)?10:20;        //»ïÇ×¿¬»êÀÚ ¸ÂÀ¸¸é 10 ¾Æ´Ï¸é 20
+	int num2 = (5>3)?10:20;        //ì‚¼í•­ì—°ì‚°ì ë§ìœ¼ë©´ 10 ì•„ë‹ˆë©´ 20
 	System.out.println(num2);
 	int age1 = 45;
 	int age2 = 52;
 	char ch = (age1>age2)?  'T':'F';
 	System.out.println(ch);           //F
-	String str = (age1>age2)? "³ªÀÌ°¡ ¸¹½À´Ï´Ù":"³ªÀÌ°¡ Àû½À´Ï´Ù";
+	String str = (age1>age2)? "ë‚˜ì´ê°€ ë§ìŠµë‹ˆë‹¤":"ë‚˜ì´ê°€ ì ìŠµë‹ˆë‹¤";
 	System.out.println(str);
 	System.out.println((age1>age2)?(age1-age2):(age2-age1));
 }
