@@ -7,8 +7,8 @@ public class Java_array3 {
 
 	}
 
-	public static void ex1() {// 3Â÷¿ø¹è¿­
-								// h³ôÀÌ4,rÇà3,c¿­2
+	public static void ex1() {// 3ì°¨ì›ë°°ì—´
+								// hë†’ì´4,rí–‰3,cì—´2
 		int[][][] tMArray = new int[4][3][2];
 		int value = 0;
 
@@ -36,15 +36,15 @@ public class Java_array3 {
 	}
 	
 	
-	public static void ex2(){//·Î¶Ç¹øÈ£ »ı¼º±â  ÀÓÀÇÀÇ¼ö=³­¼ö ¸¸µé±â random
-		//1~45±îÁöÀÇ ¼öÁß ·£´ı¼ö ¸¸µé±â
+	public static void ex2(){//ë¡œë˜ë²ˆí˜¸ ìƒì„±ê¸°  ì„ì˜ì˜ìˆ˜=ë‚œìˆ˜ ë§Œë“¤ê¸° random
+		//1~45ê¹Œì§€ì˜ ìˆ˜ì¤‘ ëœë¤ìˆ˜ ë§Œë“¤ê¸°
 		//System.out.println((int)(Math.random()*45)+1);
 		
 		int randomNo = (int)(Math.random()*45)+1;
 		int[] lotto = new int[6];
 		lotto[0] = randomNo;
 		boolean isDup = false;
-		int idx; //·Î¶Ç¹øÈ£ »ı¼º ½ÃÄö½º
+		int idx; //ë¡œë˜ë²ˆí˜¸ ìƒì„± ì‹œí€€ìŠ¤
 		
 		for(idx=1; idx<6;){
 			randomNo = (int)(Math.random()*45)+1;
