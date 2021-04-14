@@ -10,14 +10,14 @@ public class Java_array2 {
 	
 	public static void ex1(){  
 		
-		int[][] arr2 = new int[3][4];  ///  ¤±¤±¤±¤±   Á¤¹æÇâ
-		arr2[2][0] = 1;					//	¤±¤±¤±¤±
-										// 	¡á¤±¤±¤±
+		int[][] arr2 = new int[3][4];  ///  ã…ã…ã…ã…   ì •ë°©í–¥
+		arr2[2][0] = 1;					//	ã…ã…ã…ã…
+										// 	â– ã…ã…ã…
 		int[][] arr3 = {{1,2,3,4},{5,6,7,8},{9,0,1,2}};
 		System.out.println(arr3[1][1]);   //6
-		System.out.println(arr3[1]); //ÁÖ¼Ò°ª reference
-		System.out.println(arr3[1].length); //4 1ÇàÀÇ ±æÀÌ °¹¼ö
-		System.out.println(arr3.length); //3 ¹è¿­ÀÇ ±æÀÌ ¿­
+		System.out.println(arr3[1]); //ì£¼ì†Œê°’ reference
+		System.out.println(arr3[1].length); //4 1í–‰ì˜ ê¸¸ì´ ê°¯ìˆ˜
+		System.out.println(arr3.length); //3 ë°°ì—´ì˜ ê¸¸ì´ ì—´
 
 		for(int row = 0; row<arr3.length; row++){
 			for(int col = 0; col<arr3[row].length; col++){
@@ -28,9 +28,9 @@ public class Java_array2 {
 		
 	}
 	
-	public static void ex2(){		//ºñÁ¤¹æÇâ
-									//¿­À» ¸ÂÃçÁà¾ß ÇÔ
-		int[][] arr = new int[3][];   //ÃÖ¼Ò ÇàÀÇ °³¼ö´Â ³Ö¾îÁà¾ßÇÔ 
+	public static void ex2(){		//ë¹„ì •ë°©í–¥
+									//ì—´ì„ ë§ì¶°ì¤˜ì•¼ í•¨
+		int[][] arr = new int[3][];   //ìµœì†Œ í–‰ì˜ ê°œìˆ˜ëŠ” ë„£ì–´ì¤˜ì•¼í•¨ 
 		arr[0] = new int[]{1};
 		arr[1] = new int[]{2,3};
 		arr[2] = new int[]{4,5,6};
@@ -42,8 +42,8 @@ public class Java_array2 {
 		
 	}  
 	
-	public static void ex3(){//10Ãş °Ç¹° 1,2È£°¡ °¢Ãş¿¡ ÀÖ´Ù, °¢ °¡Á¤ÀÇ »ç´Â °¡Á·¼ö¸¦ ÀÓÀÇ·Î ´ëÀÔ
-								//°¢ÃşÀÇ °¡Á·¼öÇÕ°è, ¾ÆÆÄÆ® ÀüÃ¼ÀÇ °¡Á·¼öÀÇ ÇÕ°è
+	public static void ex3(){//10ì¸µ ê±´ë¬¼ 1,2í˜¸ê°€ ê°ì¸µì— ìˆë‹¤, ê° ê°€ì •ì˜ ì‚¬ëŠ” ê°€ì¡±ìˆ˜ë¥¼ ì„ì˜ë¡œ ëŒ€ì…
+								//ê°ì¸µì˜ ê°€ì¡±ìˆ˜í•©ê³„, ì•„íŒŒíŠ¸ ì „ì²´ì˜ ê°€ì¡±ìˆ˜ì˜ í•©ê³„
 		int total = 0;
 		int[][] apart = {{1,2},{3,4},{5,6},{7,8},{9,10},{1,2},{3,4},{5,6},{7,8},{9,10}};
 		int[] floor = new int[apart.length];
