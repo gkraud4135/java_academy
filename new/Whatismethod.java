@@ -21,8 +21,8 @@ public class Whatismethod {
 	
 	
 	
-	//3°³ÀÇ °ú¸ñ Á¡¼ö°ªµéÀ» ¹Ş¾Æ¼­ ÇÕ°è ±¸ÇÏ±â
-	//3°³ÀÇ °ú¸ñ Á¡¼ö°ªµéÀ» ¹Ş¾Æ¼­ Æò±Õ ±¸ÇÏ±â
+	//3ê°œì˜ ê³¼ëª© ì ìˆ˜ê°’ë“¤ì„ ë°›ì•„ì„œ í•©ê³„ êµ¬í•˜ê¸°
+	//3ê°œì˜ ê³¼ëª© ì ìˆ˜ê°’ë“¤ì„ ë°›ì•„ì„œ í‰ê·  êµ¬í•˜ê¸°
 	static int add(int a, int b, int c){
 		int result = 0;
 		result = (a + b + c);
@@ -33,7 +33,7 @@ public class Whatismethod {
 		result = add(a,b,c)/3;
 		return result; 
 	}
-	static int totalOraverage(int opt,int a, int b, int c ){// opt1=ÇÕ°è,2=Æò±Õ
+	static int totalOraverage(int opt,int a, int b, int c ){// opt1=í•©ê³„,2=í‰ê· 
 		int total = add(a,b,c);
 		if(opt==1)
 			return total;
@@ -43,7 +43,7 @@ public class Whatismethod {
 			return 0;
 	}
 
-	static int caculator(int a, int b, int c) {// °è»ê±â 1´õÇÏ±â 2»©±â 3°öÇÏ±â 4³ª´©±â caculator(¿¬»êÀÚ,¼ö,¼ö)
+	static int caculator(int a, int b, int c) {// ê³„ì‚°ê¸° 1ë”í•˜ê¸° 2ë¹¼ê¸° 3ê³±í•˜ê¸° 4ë‚˜ëˆ„ê¸° caculator(ì—°ì‚°ì,ìˆ˜,ìˆ˜)
 		int result = 0;
 		if (a == 1) {
 //			result = b + c;
@@ -61,14 +61,14 @@ public class Whatismethod {
 //			result = b / c;
 			result=divide(b,c);
 		}
-		else System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+		else System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		
 		return result;
 		
 
 	}
 	
-	static double add(double a, double b){//¿À¹ö·Îµù
+	static double add(double a, double b){//ì˜¤ë²„ë¡œë”©
 		double result;
 		result = a + b;
 		return result;
