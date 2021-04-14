@@ -3,10 +3,10 @@ package chapter1;
 public class GUgudan {
 
 	public static void main(String[] args) {
-	//3*9 2Â÷¿ø ¹è¿­
-	//1Çà : 2´Ü
-	//2Çà : 3´Ü
-	//3Çà : 4´Ü
+	//3*9 2Ã‚Ã·Â¿Ã¸ Â¹Ã¨Â¿Â­
+	//1Ã‡Ã  : 2Â´Ãœ
+	//2Ã‡Ã  : 3Â´Ãœ
+	//3Ã‡Ã  : 4Â´Ãœ
 		gugudan();
 	}
 
