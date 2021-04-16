@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Class
+Bundle-SymbolicName: java01.class
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: java01.class
+Bundle-RequiredExecutionEnvironment: JavaSE-15
