@@ -9,26 +9,14 @@ public class RobotMain {
 		
 		Robot robot = null;
 		
-		robot = new CheapRobot("Cheap");
-		makeRobot(robot, new FlyNo(), new MissileNo(), new SwordNo());
-
-		robot = new StandardRobot("Standard");
-		makeRobot(robot, new FlyYes(), new MissileNo(), new SwordWood());
+		robot = new CheapRobot("Cheap", new FlyYes(), new MissileNo(), new SwordNo());
+		robot.makeRobot();
 		
-		robot = new SuperRobot("Super");
-		makeRobot(robot, new FlyYes(), new MissileYes(), new SwordLaser());
-	}
-
-	public static void makeRobot(Robot robot, 
-			InterFly fly, InterMissile missile, InterSword sword) {
-		robot.shape();
-		robot.actionWalk();
-		robot.actionRun();
-		robot.actionFly(fly);
-		robot.actionMissile(missile);
-		robot.actionSword(sword);
-		System.out.println();		
+		robot = new StandardRobot("Standard", new FlyNo(), new MissileYes(), new SwordWood());
+		robot.makeRobot();
 		
+		robot = new SuperRobot("Super", new FlyYes(), new MissileYes(), new SwordLaser());
+		robot.makeRobot();
 	}
 
 }
