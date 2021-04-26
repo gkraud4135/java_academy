@@ -33,29 +33,29 @@ public class HashSetMain1 {
 
 	public static void main(String[] args) {
 		
-		Set<String> set = new HashSet<>();
+		Set<String> set = new HashSet<>(); //HashSet으로 생성
 		
-		set.add("Java");
+		set.add("Java"); //추가
 		set.add("DataBase");
 		set.add("Python");
 		set.add("R");
 		set.add("JDBC");
 		set.add("Java"); // 에러는 발생하지 않지만 중복저장되지는 않는다.
 		
-		int size = set.size();
+		int size = set.size(); //추가된 객체수
 		System.out.println("총객체수는 " + size);
 		
-		Iterator<String> iterator = set.iterator();
-		while(iterator.hasNext()) {
-			String element = iterator.next();
-			System.out.println(element);
-		}
+		Iterator<String> iterator = set.iterator();  //Iterator로 검색가능-추가
+		while(iterator.hasNext()) {					 //iterator객체가 무작위 하나있으면
+			String element = iterator.next();		 //element에 그것을 넣고
+			System.out.println(element);			//출력
+		}											//반복
 		System.out.println();
 		
-		set.remove("DataBase");
+		set.remove("DataBase");//삭제
 		System.out.println("총객체수는 " + set.size());
 		for(String element:set) {
-			System.out.println(element);
+			System.out.println(element);//출력
 		}
 		System.out.println();
 		

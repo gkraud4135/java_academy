@@ -2,7 +2,8 @@ package com.lec206.ex01_list;
 
 import java.util.List;
 import java.util.Vector;
-
+// Vector list= new Vector();  double num=1.2  
+// int index=list.indexOf(num); 이미 있는 숫자를 넣는것이 위치를 찾는것
 public class VectorMain {
 
 	public static void main(String[] args) {
