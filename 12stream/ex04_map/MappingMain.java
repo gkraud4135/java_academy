@@ -13,6 +13,7 @@ public class MappingMain {
 			);
 
 		list.stream().mapToInt(Student :: getScore).forEach(s -> System.out.println(s));
+		//map flat의 차이 map은 새로구성해서 리턴한다
 	}
 
 }

@@ -18,11 +18,11 @@ public class PipeLineMain {
 				.filter(m -> m.getGender() == Member.MALE)       // list 스트림데이터에서 남자회원만 필터링
 				.mapToInt(Member :: getAge)     // 필터링결과에서 회원나이만 mapping
 				.average()      // 회원나이의 평균을 OptionalDouble에 저장
-				.getAsDouble();
+				.getAsDouble(); 
 		System.out.println("남자회원의 평균나이 = " + ageAvg);
-	}
+	} 
 }
-
+//filter(n -> n.startsWith("소"))
 class Member {
 	
 	public static int MALE = 0;

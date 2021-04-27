@@ -18,11 +18,11 @@ public class FilteringMain {
 		
 		List<String> names = Arrays.asList("홍길동", "소향", "손흥민", "소향", "홍길자", "홍길동");
 		
-		// 1. 중복제거
+		// 1. 중복제거  distinct()
 		names.stream().distinct().forEach(n -> System.out.println(n));
 		System.out.println();
 				
-		// 2. 필터링 : "소"로 시작하는 자료만 필터링
+		// 2. 필터링 : "소"로 시작하는 자료만 필터링 n은 그냥지역변수 /소로 시작하는
 		names.stream().filter(n -> n.startsWith("소")).forEach(n -> System.out.println(n));
 		System.out.println();
 		
@@ -33,3 +33,4 @@ public class FilteringMain {
 	}
 
 }
+
